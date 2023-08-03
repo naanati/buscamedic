@@ -1,0 +1,56 @@
+/* Estilos gerais */
+.container-NavBar {
+    width: 100%;
+    background-color: #f0f0f0;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .navbar-buttons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-buttons li {
+    margin-left: 20px;
+  }
+  
+  /* Estilos dos links da NavBar */
+  .navbar-buttons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .navbar-buttons a:hover {
+    background-color: #ccc;
+  }
+  
+  /* Estilo do link ativo */
+  .active-link {
+    background-color: #adc2e8;
+    color: #fff;
+  }
+  
+  /* Estilo da barra inferior da NavBar */
+  .bar {
+    height: 3px;
+    background-color: #007bff;
+  }
+  

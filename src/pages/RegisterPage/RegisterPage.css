@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@300&family=Poppins:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Estilizacao da tela toda*/
+body{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #fbfbfb;
+   
+}
+
+/* Container da imagem */
+.container-cadastro{
+    width: 100%;
+    height: 100vh;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* espaço em que está o container que engloba todos os inputs do cadastro*/
+.form-header{
+    width: 58%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* container que engloba todos os inputs do cadastro*/
+.form-header form{
+    width: 100%
+}
+
+/* Centralização dos inputs do cadastro */
+.input-box label {
+    margin-left: 8px;
+}
+
+/* Centralização do formulário cadastro, sem mexer no título*/
+.post-form{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+/* Estilização da linha azul abaixo do h1 "Cadastre-se" */
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #0741ad;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0; 
+    width: 100%;
+    gap: 10px;
+
+}
+
+/*Espaçamento dos inputs do formulário de cadastro*/
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.0rem;
+    min-width: calc(100%/3.5);
+  
+}
+
+/* Estilização nas bordas dos inputs */
+.input-box input, .input-box select{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid gray;
+    background-color: #ffffff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+/* Linha azul ao clicar na borda dos inputs para o preenchimento dos campos */
+.input-box input:focus-visible{
+    outline: 1px solid #0741ad;
+}
+
+/* Tamanho dos inputs */
+.input-box label,
+.gender-title h6{
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+/* Cor do placeholder */
+.input-box input::placeholder{
+    color: #000000be;
+}
+
+/* Estilização dos inputs que estão na classe senhas-box */
+.senhas-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+
+}
+
+/* Largura dos inputs que estão na classe senhas-box */
+.senhas-box .input-box{
+    width: 50%;
+}
+/* Estilização do botão cadastrar */
+.continue-button button{
+    width: 100%;
+    margin-top: 1.6rem;
+    border: none;
+    background-color: #0741ad;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+
+}
+
+/* Centralização do botão cadastrar */
+.continue-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: -20px;
+
+}
+
+/*Adicionando a cor branca no layout cadastrar*/
+.continue-button button a{
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #fff;
+    
+}
+
+/*Centralização  do botão voltar*/
+.voltar-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: -20px;
+
+}
+
+/*Estilização do botão voltar, aumentando a largura e adicionando a cor do botao*/ 
+.voltar-button button{
+    width: 100%;
+    margin-top: 1.6rem;
+    border: none;
+    background-color:  #3771dd;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+
+}
+/*Alterando a cor do layout voltar para branco*/
+.voltar-button button a{
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*botao para fazer login*/
+.voltar-button span{
+    text-decoration: underline;
+    color: #0741ad;
+    cursor: pointer; 
+}
+
+/* Estilização do botão para excluir seu cadastro */
+.voltar-button h5{
+    text-decoration: underline;
+    color: rgb(176, 18, 18);
+    cursor: pointer;
+    
+
+}
+
+/* Largura do input "Funcionário responsável */
+.phone-box{
+    width: 100%;
+}
+
+
+/* Deixando a tela responsiva */
+@media screen and (max-width: 768px) {
+    .container-cadastro {
+      flex-direction: column;
+      height: 100vh;
+    }
+  
+    .senhas-box{
+        width: 100%;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .input-box{
+        width: 100% !important;
+    }
+    .form-header{
+        width: 100%;
+        padding: 20px;
+    }
+
+  }
